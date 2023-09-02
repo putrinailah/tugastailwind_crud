@@ -31,7 +31,7 @@ if(isset($_POST['submit'])){
                         <input value="<?= $student['nis']?>" class="rounded-lg p-3 block w-full" type="number" name="nis" id="nis" placeholder="Masukan NIS Anda">
                         <input type="hidden" name="id" value="<?= $student['id']?>">
                         <div class="grid gap-2">
-                    <button name="submit" class="bg-blue-900 hover:bg-blue-700 p-3 m-4 rounded-lg text-white" type="submit">Submit</button>
+                           <button name="submit" class="bg-blue-900 hover:bg-blue-700 p-3 m-4 rounded-lg text-white" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
