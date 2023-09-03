@@ -9,16 +9,18 @@ if(isset($_POST['submit'])) {
         'nis' => $_POST['nis'],
     ]);
 
-    echo $response;
+    setcookie('message',$response,time()+10);
     header("location: index.php");
 }
 
 if(isset($_POST['delete'])){
     $response = Student::delete($_POST['id']);
-
+    setcookie('message',$response,time()+10);
     header("location: index.php");
 }
 ?>
+    <!-- alert -->
+ <?php include('./layouts/alert.php');?> 
 
 <html lang="en">
 <head>
